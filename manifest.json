@@ -1,0 +1,26 @@
+{
+
+  "description": "Adds a browser action icon to the toolbar. Click the button to access the real URL of a pic on Klassly",
+  "manifest_version": 2,
+  "name": "Klassext",
+  "version": "0.1",
+  "homepage_url": "https://github.com/gillesw/klassext",
+  "icons": {
+    "48": "icons/beasts-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/beasts-32.png",
+    "theme_icons": [{
+        "light": "icons/beasts-32-light.png",
+        "dark": "icons/beasts-32.png",
+        "size": 32
+    }],
+    "default_title": "Klassext",
+    "default_popup": "popup/URL.html"
+  }
+}
