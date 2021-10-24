@@ -9,6 +9,13 @@
     "48": "icons/beasts-48.png"
   },
 
+  "content_scripts": [
+    {
+      "matches": ["*"],
+      "js": ["./URL.js"]
+    }
+  ],
+
   "permissions": [
     "activeTab"
   ],
